@@ -26,12 +26,14 @@ Para iniciar el proyecto hay que utilizar las siguientes instrucciones:
 
 Dentro de la carpeta Front en una terminal ejecutar:
 ```js
+npm i
 npm run dev
 ```
 *[Back-End]* 
 
 Dentro de la carpeta Back en una terminal ejecutar:
 ```js
+npm i
 npm run start:dev
 ```
 
