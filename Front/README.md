@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# Prueba Front + Back Allware
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Prueba Desarrollador Full Stack para Allware
 
-Currently, two official plugins are available:
+Se utilziaron las siguientes tecnologias:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- *[Front-End]* React TSX + StyledComponents + React-Hook-Form + React-Router Dom 
+- *[Back-End]* NestJS + Prisma ORM + SQLite
 
-## Expanding the ESLint configuration
+Justificacion:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- *[Front-End]* 
+  - No Aplica
 
-- Configure the top-level `parserOptions` property like this:
+- *[Back-End]* 
+  - NestJS: Se seleccionó por su estrecha integración con el ecosistema de React y su enfoque en TypeScript ademas permitiendo utilizar la estructura MVC predefinida por el framework.
 
+  - Prisma ORM: Elegido por su facilidad de uso y seguridad al ofrecer una capa de abstracción sobre la base de datos, evitando el uso de queries raw y proporcionando un código más limpio y seguro.
+
+  - SQLite: Por su ligereza y su fácil integración en la aplicación, eliminando la necesidad de configuraciones complejas y permitiendo un acceso eficiente a la base de datos ya que solamente necesitaba una base de datos para integrar el back-end.
+## Iniciar el proyecto
+
+Para iniciar el proyecto hay que utilizar las siguientes instrucciones:
+
+*[Front-End]* 
+
+Dentro de la carpeta Front en una terminal ejecutar:
 ```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+npm run dev
+```
+*[Back-End]* 
+
+Dentro de la carpeta Back en una terminal ejecutar:
+```js
+npm run start:dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Felipe Osorio Slier
